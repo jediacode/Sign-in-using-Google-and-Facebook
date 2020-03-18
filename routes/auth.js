@@ -15,7 +15,7 @@ const express =require("express")
 
  router.post("/signup",authController.postSignUp)
 
- router.get("/secret",google_auth_middleware,secretController.secret)
+ router.get("/secret",secretController.secret)
 
 
  
