@@ -8,7 +8,7 @@ passportG.serializeUser((user,done)=>{
 })
 
 passportG.deserializeUser((id,done)=>{
-    console.log(chalk.red("google deserialize user called"))
+    console.log(chalk.red("google deserializeUser function called"))
     googleUser.findById(id)
     .then(user=>{
         console.log(id)
