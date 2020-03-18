@@ -1,0 +1,19 @@
+<h1>Sign-up page</h1>
+
+<% if(errorMessage){%>
+
+    <h3><%= errorMessage%></h3>
+    
+        <%}%>
+
+<form action="/signup" method="POST">
+
+
+<input type="username" name="username" placeholder="Enter the username">
+
+<input type="email" name="email" placeholder="Enter the email">
+<input type="password" name="password" placeholder="Enter the pasword">
+
+<button>Submit</button>
+
+</form>

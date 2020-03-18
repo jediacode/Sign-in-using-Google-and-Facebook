@@ -1,0 +1,22 @@
+<h1>login page</h1>
+
+<% if(errorMessage){%>
+
+<h3><%= errorMessage%></h3>
+
+    <%}%>
+
+    <% if(passMessage){%>
+
+        <h3><%= passMessage%></h3>
+        
+            <%}%>
+
+<form action="/login" method="POST">
+
+<input type="email" name="email" placeholder="Enter the email">
+<input type="password" name="password" placeholder="Enter the pasword">
+
+<button>Submit</button>
+
+</form>
