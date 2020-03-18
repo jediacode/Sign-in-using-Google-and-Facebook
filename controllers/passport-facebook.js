@@ -11,7 +11,7 @@ PassportF.serializeUser((user,done)=>{
 })
 
 PassportF.deserializeUser((id,done)=>{
-    console.log(chalk.red("Facebook desrializeUser called"))
+    console.log(chalk.red("Facebook desrializeUser function called "))
     facebookUser.findById(id)
     .then(user=>{
         
